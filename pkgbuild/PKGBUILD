@@ -1,0 +1,16 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=blackbird-settings-kdeapps
+pkgver=1.0
+pkgrel=1
+pkgdesc="Default KDE Applications settings (dolphin, kate, yakuake) for Blackbird OS"
+arch=('any')
+url='https://github.com/blackbird-os/blackbird-settings-kdeapps'
+license=('GPL')
+
+package() {
+  cd ../..
+  cp -aR etc $pkgdir/
+  cp -aR usr $pkgdir/
+}
